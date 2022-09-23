@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 const multer = require("multer");
 const { createBus } = require("../controllers/busController");
+const auth = require("../middleware/auth");
+const admin = require("../middleware/admin");
 const router = express.Router();
 const { Bus } = require("../models/bus");
 
@@ -18,6 +20,7 @@ const upload = multer({ storage: storage });
 
 router.post(
   "/",
+  [auth, admin],
   upload.array("busImage"), // for storing single image : upload.single('productPicture')
   createBus
 );
