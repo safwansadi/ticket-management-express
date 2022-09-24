@@ -1,0 +1,381 @@
+{
+	"info": {
+		"_postman_id": "540bd4e8-8411-458d-902d-443d7e98b268",
+		"name": "bus-ticket-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createAdmin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/users/create-admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users",
+						"create-admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aminLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"safwansadi223@gmail.com\",\n    \"password\":\"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-Bus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJlYTRlN2Q0YzA2Yzk4MzZkZDhlN2YiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NjQwMDE2MDN9.zC-NTdwQZM4oqpQ0Cq-41jYiiMAzR5PZagPF70u5u0Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Shohag",
+							"type": "text"
+						},
+						{
+							"key": "busImage",
+							"type": "file",
+							"src": "/home/safwan-atl/Downloads/cover.jpg"
+						},
+						{
+							"key": "capacity",
+							"value": "40",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/bus/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"bus",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllBus",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJlYTRlN2Q0YzA2Yzk4MzZkZDhlN2YiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NjQwMDE2MDN9.zC-NTdwQZM4oqpQ0Cq-41jYiiMAzR5PZagPF70u5u0Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/api/bus/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"bus",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add bus route",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJlYTRlN2Q0YzA2Yzk4MzZkZDhlN2YiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NjQwMDE2MDN9.zC-NTdwQZM4oqpQ0Cq-41jYiiMAzR5PZagPF70u5u0Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"route\":\"Dhaka-Chittagong\",\n    \"busId\":\"632e83a62bb63c524df3a59f\",\n    \"date\":\"26-02-2022\",\n    \"ticketPrice\":500,\n    \"seatAvailable\":30 \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/busRoute/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"busRoute",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "booking-request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJlYTRlN2Q0YzA2Yzk4MzZkZDhlN2YiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NjQwMDE2MDN9.zC-NTdwQZM4oqpQ0Cq-41jYiiMAzR5PZagPF70u5u0Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"busRouteId\":\"632ee6ab330e452c9e4f9fb0\",\n    \"quantity\":6\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/booking/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"booking",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all customers booking history",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJlYTRlN2Q0YzA2Yzk4MzZkZDhlN2YiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NjQwMDE2MDN9.zC-NTdwQZM4oqpQ0Cq-41jYiiMAzR5PZagPF70u5u0Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/api/booking/all-bookings-history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"booking",
+						"all-bookings-history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approve-booking",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJlYTRlN2Q0YzA2Yzk4MzZkZDhlN2YiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NjQwMDE2MDN9.zC-NTdwQZM4oqpQ0Cq-41jYiiMAzR5PZagPF70u5u0Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bookingStatus\":\"approved\",\n    \"paymentStatus\":\"paid\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/booking/approve-booking/632ee733d6f5b41d8d552ed3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"booking",
+						"approve-booking",
+						"632ee733d6f5b41d8d552ed3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user's booking history",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJlYTRlN2Q0YzA2Yzk4MzZkZDhlN2YiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NjQwMDE2MDN9.zC-NTdwQZM4oqpQ0Cq-41jYiiMAzR5PZagPF70u5u0Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/api/booking/user-booking-history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"booking",
+						"user-booking-history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get bus routes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJlYTRlN2Q0YzA2Yzk4MzZkZDhlN2YiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NjQwMDE2MDN9.zC-NTdwQZM4oqpQ0Cq-41jYiiMAzR5PZagPF70u5u0Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/api/busRoute/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"busRoute",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sadi@gmail.com\",\n    \"name\":\"safwan\",\n    \"password\":\"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sadi@gmail.com\",\n    \"password\":\"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
