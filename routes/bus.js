@@ -18,14 +18,9 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-router.post(
-  "/",
-  [auth, admin],
-  upload.array("busImage"), // for storing single image : upload.single('productPicture')
-  createBus
-);
+router.post("/", [auth, admin], upload.array("busImage"), createBus);
 
-router.get("/", async (req, res) => {
+router.get("/", auth, async (req, res) => {
   const bus = await Bus.find();
   res.send(bus);
 });

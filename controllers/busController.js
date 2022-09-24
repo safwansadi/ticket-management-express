@@ -1,8 +1,11 @@
-const { Bus } = require("../models/bus");
+const { Bus, validate } = require("../models/bus");
 const { PORT } = require("../utils/env");
 
 exports.createBus = async (req, res) => {
-  const { name } = req.body;
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
+  const { name, capacity } = req.body;
 
   let busImages = [];
 
@@ -15,6 +18,7 @@ exports.createBus = async (req, res) => {
   const bus = new Bus({
     name,
     busImages,
+    capacity,
   });
 
   await bus.save((error, bus) => {
