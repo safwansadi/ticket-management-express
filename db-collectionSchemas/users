@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "632d6da144f0a70604366550"
+  },
+  "name": "user1",
+  "email": "user1@gmail.com",
+  "password": "$2b$10$7/LACsjTCei/Bu1/BEQoMuSa.oKafJwFvuLjQVG5TSh/1i12CtwB2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632d7b5847392693031d2af4"
+  },
+  "name": "safwan",
+  "email": "safwansadi@gmail.com",
+  "password": "$2b$10$PhRZ8ZHZIMM1hyoci/7pmOKOJSSLOHFg05eZtnJtMhaqSz2ldwk5G",
+  "isAdmin": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632d7be7eafd2d6ad9a04c17"
+  },
+  "name": "safwan",
+  "email": "safwansadi22@gmail.com",
+  "password": "$2b$10$w2P26vSWnkuRHjY6Fj2UlO5gDsmJS5RFKq9.sS.bN9wnmxYg2Sa9K",
+  "isAdmin": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632ea4e7d4c06c9836dd8e7f"
+  },
+  "name": "safwan",
+  "email": "safwansadi223@gmail.com",
+  "password": "$2b$10$QDM0tKaysx6uz64AAolpkOrJAOmo/BeOdkJfgbrx68QrG6oahyaPW",
+  "isAdmin": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632eeec04a60f79f46eabd0c"
+  },
+  "name": "safwan",
+  "email": "sadi@gmail.com",
+  "password": "$2b$10$m1Bppd9Zug25fQ7h2vv.9ej0YjGSjfRWMoYoQQo1r6ZKoAZHFVhFK",
+  "__v": 0
+}]

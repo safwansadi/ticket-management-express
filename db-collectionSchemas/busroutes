@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "632eaae3586a18de814e4f0c"
+  },
+  "route": "Dhaka-Chittagong",
+  "busInfo": {
+    "name": "Shohag",
+    "capacity": 40,
+    "_id": {
+      "$oid": "632ea725f5cdb1995d07748b"
+    },
+    "busImages": []
+  },
+  "date": "26-02-2022",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632eac74620a22a35193e830"
+  },
+  "route": "Dhaka-Chittagong",
+  "busInfo": {
+    "name": "shohag",
+    "busImages": [
+      {
+        "img": "http://localhost:3001/github.jpg",
+        "_id": {
+          "$oid": "632e83a72bb63c524df3a5a0"
+        }
+      }
+    ],
+    "capacity": 30,
+    "_id": {
+      "$oid": "632e83a62bb63c524df3a59f"
+    }
+  },
+  "date": "26-02-2022",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632ed7daae605bba52b0747e"
+  },
+  "route": "Dhaka-Chittagong",
+  "busInfo": {
+    "name": "shohag",
+    "busImages": [
+      {
+        "img": "http://localhost:3001/github.jpg",
+        "_id": {
+          "$oid": "632e83a72bb63c524df3a5a0"
+        }
+      }
+    ],
+    "capacity": 30,
+    "_id": {
+      "$oid": "632e83a62bb63c524df3a59f"
+    }
+  },
+  "date": "26-02-2022",
+  "ticketPrice": 500,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632ee6ab330e452c9e4f9fb0"
+  },
+  "route": "Dhaka-Chittagong",
+  "busInfo": {
+    "name": "shohag",
+    "busImages": [
+      {
+        "img": "http://localhost:3001/github.jpg",
+        "_id": {
+          "$oid": "632e83a72bb63c524df3a5a0"
+        }
+      }
+    ],
+    "capacity": 30,
+    "_id": {
+      "$oid": "632e83a62bb63c524df3a59f"
+    }
+  },
+  "date": "26-02-2022",
+  "ticketPrice": 500,
+  "seatAvailable": 24,
+  "__v": 0
+}]

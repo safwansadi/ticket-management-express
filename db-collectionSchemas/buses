@@ -1,0 +1,129 @@
+[{
+  "_id": {
+    "$oid": "632db85442e391a0f71f6eb3"
+  },
+  "name": "soudia",
+  "busImages": [
+    {
+      "img": "Screenshot from 2021-09-24 23-47-30.png",
+      "_id": {
+        "$oid": "632db85442e391a0f71f6eb4"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632dbc576e2818f32cd12293"
+  },
+  "name": "soudia",
+  "busImages": [
+    {
+      "img": "cover.jpg",
+      "_id": {
+        "$oid": "632dbc576e2818f32cd12294"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632dccd4bb0dd2186de3bbdd"
+  },
+  "name": "soudia",
+  "busImages": [
+    {
+      "img": "http://localhost:3000/cover.jpg",
+      "_id": {
+        "$oid": "632dccd4bb0dd2186de3bbde"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632dcd8abb0dd2186de3bbe0"
+  },
+  "name": "saudia",
+  "busImages": [
+    {
+      "img": "http://localhost:3000/apex.jpg",
+      "_id": {
+        "$oid": "632dcd8abb0dd2186de3bbe1"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632dceafbb0dd2186de3bbe8"
+  },
+  "name": "greenLine",
+  "busImages": [
+    {
+      "img": "http://localhost:3000/Check-mark.png",
+      "_id": {
+        "$oid": "632dceafbb0dd2186de3bbe9"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632dcf895f18aee0e8a9f711"
+  },
+  "name": "shohag",
+  "busImages": [
+    {
+      "img": "http://localhost:3001/github.jpg",
+      "_id": {
+        "$oid": "632dcf895f18aee0e8a9f712"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632dd3bbb114f573600b1105"
+  },
+  "name": "shohag",
+  "busImages": [
+    {
+      "img": "http://localhost:3001/github.jpg",
+      "_id": {
+        "$oid": "632dd3bbb114f573600b1106"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632e83a62bb63c524df3a59f"
+  },
+  "name": "shohag",
+  "busImages": [
+    {
+      "img": "http://localhost:3001/github.jpg",
+      "_id": {
+        "$oid": "632e83a72bb63c524df3a5a0"
+      }
+    }
+  ],
+  "capacity": 30,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632ea725f5cdb1995d07748b"
+  },
+  "name": "Shohag",
+  "busImages": [
+    {
+      "img": "http://localhost:3001/cover.jpg",
+      "_id": {
+        "$oid": "632ea725f5cdb1995d07748c"
+      }
+    }
+  ],
+  "capacity": 40,
+  "__v": 0
+}]
